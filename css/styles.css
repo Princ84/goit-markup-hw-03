@@ -12,6 +12,8 @@
 
 ul {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 .list{
   display: flex;
@@ -174,11 +176,10 @@ body {
 .button {
     font-family: inherit;
     font-weight: 500;
-    width: 170 px;
-    font-size: 16px;
+     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.04em;
-    display:inline-block;
+    
     border-radius: 4px;
     padding: 16px 34px;
     
@@ -186,7 +187,7 @@ body {
     border: 1px solid var(--activ-but-color);
     color: var(--secondary-color);
     background-color: var(--primery-band-color);
-  cursor: pointer;
+    cursor: pointer;
 }
 .button:focus,
 .button:hover{
@@ -203,7 +204,8 @@ button :active{
     gap: 24px;
 }
 .future-item{
-  width:264px;
+  /* width:264px; */
+  flex-basis: calc((100%-3*24px/4));
 }
 .description{
 font-weight: 400;
@@ -236,10 +238,12 @@ color: var(--headings-text-color);
 }
 .our-team{
 background-color:var(--subaccent-color);
-height: 732px;
-/* padding-top: 120px; */
 
+}
 
+.our-team-item{
+  text-align: center;
+  padding: 32px 16px;
 }
 .team-item{
   display: flex;
@@ -266,7 +270,7 @@ color: var(--text-color);
 }
 /*----------footer----------  */
 .footer-list .logo{
-  display: block;
+  display:inline;
   margin-bottom: 16px;
   margin-right: 0;
 }
@@ -310,16 +314,25 @@ color:var(--subtle-background-color);
 .portfolio{
     display: none;
 }
-.skills{
+.skill{
     display: none;
+}
+.button-item{
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: center;
+  gap: 24px;
 }
 .button-portfoleo{
 font-family: inherit;
+ padding: 12px 24px;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.04em;
+border-radius: 4px;
+border: 1px solid var(--secondary-color);
 color:var(--primery-band-color);
 background-color:var(--subaccent-color);
 cursor: pointer;   
@@ -338,4 +351,27 @@ cursor: pointer;
   background:var(--primery-band-color);
   
 }
+.skills-item-list{
+  text-align: center;
+  padding: 16px 32px;
+}
 
+
+.skills{
+  display: block;
+  display: flex;
+   flex-wrap: wrap;
+    row-gap:48px;
+    column-gap: 24px;
+    /* padding-bottom: 120px; */
+    
+}
+.skills:nth-last-child(-n + 3){
+  margin-bottom: 0;
+}
+.skills:nth-child(3n){
+  margin-right: 0;
+}
+.skills-card{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
