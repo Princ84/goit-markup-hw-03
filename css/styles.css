@@ -1,0 +1,341 @@
+:root {
+  --headings-text-color: #2e2f42;
+  --secondary-color: #ffffff;
+  --text-color: #434455;
+  --subtle-background-color: #e7e9fc;
+  --primery-band-color: #4d5ae5;
+  --subaccent-color:#F4F4FD;
+  --activ-but-color:#404BBF;
+
+
+}
+
+ul {
+  list-style: none;
+}
+.list{
+  display: flex;
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+/* index.html */
+/* body font */
+body {
+  font-family: "Roboto", sans-serif;
+  color:var(--headings-text-color);
+  font-size: 16px;
+  
+}
+
+/*---------------- hader ------------------------------*/
+.container{
+  width:1158px;
+  padding-right:15px;
+  padding-left:15px;
+  margin-left:auto;
+  margin-right:auto;
+  /* margin: auto; */
+}
+.main-container{
+  display: flex;
+  align-items: center;
+  
+}
+.header{
+ display: flex;
+  align-items: center; 
+  
+}
+.site-nav{
+  display: flex;
+  margin-left: 77px;
+}
+.web {
+  color:var(--primery-band-color);
+  
+ 
+}
+.studio {
+  font-family: "Raleway",sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-text-color);
+  text-decoration: none;
+}
+.list .nav-item{
+  margin-right: 40px;
+}
+.list .nav-item:last-child{
+  margin-right: 0;
+}
+
+.studio-list {
+   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color:var(--headings-text-color);
+  text-decoration: none;
+}
+.studio-list:hover {
+  color:var(--primery-band-color);
+}
+.page-hader{
+  background-color: var(--secondary-color);
+}
+
+.nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color:var(--headings-text-color);
+  text-decoration: none;
+ 
+}
+.nav-link:active{
+  color:var(--primery-band-color);
+}
+.nav-link:hover,.nav-link:focus {
+  color:var(--primery-band-color);
+  
+}
+
+.auth-contact{
+  display: flex;
+  margin-left: auto;
+}
+.auth-contact .nav-item + .nav-item{
+  margin-left:40px;
+}
+.Contact-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color:var(--text-color);
+  text-decoration: none;
+}
+.Contact-link:active{
+  color:var(--primery-band-color);
+}
+.Contact-link:hover,.Contact-link:focus {
+  color:var(--primery-band-color);
+}
+
+
+/*--------------- main --------------*/
+.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.hero{
+  background-color:var(--headings-text-color); 
+  padding-top: 192px;
+  padding-bottom: 192px;
+  text-align: center;
+  
+  
+}
+.hero-title {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width:496px;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.button {
+    font-family: inherit;
+    font-weight: 500;
+    width: 170 px;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+    display:inline-block;
+    border-radius: 4px;
+    padding: 16px 34px;
+    
+    text-align: center;
+    border: 1px solid var(--activ-but-color);
+    color: var(--secondary-color);
+    background-color: var(--primery-band-color);
+  cursor: pointer;
+}
+.button:focus,
+.button:hover{
+background-color: var(--primery-band-color);
+}
+button :active{
+  background:var(--activ-but-color);
+}
+
+.future-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.future-item{
+  width:264px;
+}
+.description{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--text-color);
+}
+
+.doing-item {
+  
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.doing-list{
+  width: 360px;
+ 
+}
+.section-title-text{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+/* align-items: center; */
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--headings-text-color);
+
+}
+.our-team{
+background-color:var(--subaccent-color);
+height: 732px;
+/* padding-top: 120px; */
+
+
+}
+.team-item{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 72px;
+
+}
+.section-title{
+font-weight: 700;
+font-size: 20px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--headings-text-color);
+}
+.profession{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--text-color);
+}
+/*----------footer----------  */
+.footer-list .logo{
+  display: block;
+  margin-bottom: 16px;
+  margin-right: 0;
+}
+.footer-color{
+  background-color: var(--headings-text-color);
+ 
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-list{
+  
+ width: 264px;
+}
+
+.studiofoot{
+ font-family: "Raleway",sans-serif;
+  font-weight: 800;
+  
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--secondary-color);
+  text-decoration: none;
+}
+.footer-text{
+padding-top: 16px;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color:var(--subtle-background-color);
+
+}
+
+
+
+
+/* ==================Portdolio=============== */
+/* main */
+.portfolio{
+    display: none;
+}
+.skills{
+    display: none;
+}
+.button-portfoleo{
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.04em;
+color:var(--primery-band-color);
+background-color:var(--subaccent-color);
+cursor: pointer;   
+}
+.button-portfoleo:hover{
+  color:var(--ary-color);
+  background-color: var(--primery-band-color);
+}
+.button-portfoleo:focus{
+  color:var(--secondary-color);
+  background:var(--primery-band-color);
+
+}
+.button:active{
+  color:var(--secondary-color);
+  background:var(--primery-band-color);
+  
+}
+
