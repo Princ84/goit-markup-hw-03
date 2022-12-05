@@ -9,7 +9,15 @@
 
 
 }
-
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -119,6 +127,9 @@ body {
   margin-left:40px;
 }
 .Contact-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -136,8 +147,9 @@ body {
 
 /*--------------- main --------------*/
 .section{
-  padding-top: 120px;
-  padding-bottom: 120px;
+   
+     padding-top: 96px;
+     padding-bottom: 72px;
 }
 .hero{
   background-color:var(--headings-text-color); 
@@ -227,6 +239,7 @@ color: var(--text-color);
 }
 .section-title-text{
 font-weight: 700;
+padding-bottom: 72px;
 font-size: 36px;
 line-height: 1.11;
 /* align-items: center; */
@@ -244,19 +257,21 @@ background-color:var(--subaccent-color);
 .our-team-item{
   text-align: center;
   padding: 32px 16px;
+  background-color: var(--secondary-color);
 }
 .team-item{
   display: flex;
   align-items: center;
   gap: 24px;
-  padding-top: 72px;
+  margin-top: 72px;
 
 }
 .section-title{
 font-weight: 700;
+padding-bottom: 8px;
 font-size: 20px;
 line-height: 1.2;
-text-align: center;
+
 letter-spacing: 0.02em;
 color: var(--headings-text-color);
 }
@@ -297,7 +312,7 @@ color: var(--text-color);
   text-decoration: none;
 }
 .footer-text{
-padding-top: 16px;
+margin-top: 16px;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -338,7 +353,7 @@ background-color:var(--subaccent-color);
 cursor: pointer;   
 }
 .button-portfoleo:hover{
-  color:var(--ary-color);
+  color:var(--secondary-color);
   background-color: var(--primery-band-color);
 }
 .button-portfoleo:focus{
@@ -352,8 +367,17 @@ cursor: pointer;
   
 }
 .skills-item-list{
-  text-align: center;
-  padding: 16px 32px;
+   border-left-width: 0.5px;
+    border-left-style: solid;
+    border-left-color: var(--subaccent-color);
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--subaccent-color);
+    border-right-width: 0.5px;
+    border-right-style: solid;
+    border-right-color: var(--subaccent-color);
+  /* text-align: center; */
+    padding: 16px 32px;
 }
 
 
