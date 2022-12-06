@@ -220,7 +220,7 @@ button :active{
 }
 .future-item{
   /* width:264px; */
-  flex-basis: calc((100%-3*24px/4));
+  flex-basis: calc((100% - 3 * 24px ) / 4);
 }
 .description{
 font-weight: 400;
@@ -243,7 +243,7 @@ color: var(--text-color);
 }
 .section-title-text{
 font-weight: 700;
-padding-bottom: 72px;
+margin-bottom: 72px;
 font-size: 36px;
 line-height: 1.11;
 /* align-items: center; */
@@ -262,18 +262,22 @@ background-color:var(--subaccent-color);
   text-align: center;
   padding-bottom: 120px;
   padding: 32px 16px;
-  background-color: var(--secondary-color);
+  
 }
 .team-item{
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-top: 72px;
+  
 
+}
+.team-list{
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--secondary-color);
 }
 .section-title{
 font-weight: 700;
-padding-bottom: 8px;
+margin-bottom: 8px;
 font-size: 20px;
 line-height: 1.2;
 
@@ -389,7 +393,7 @@ cursor: pointer;
     border-right-style: solid;
     border-right-color: var(--subaccent-color);
   /* text-align: center; */
-    padding: 16px 32px;
+    padding: 32px 16px;
 }
 
 
